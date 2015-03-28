@@ -44,7 +44,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 200;
+    return 250;
     
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -54,22 +54,29 @@
     image.frame=CGRectMake(0, 0, CGRectGetWidth(self.view.frame), 200);
     [image setContentMode:UIViewContentModeScaleAspectFit];
     
+    UILabel *textLabelThingy=[[UILabel alloc] initWithFrame:CGRectMake(0,CGRectGetMaxY(image.frame), CGRectGetWidth(self.view.frame), 50)];
+    [cell addSubview:textLabelThingy];
+    [textLabelThingy setTextColor:[UIColor whiteColor]];
+    
     switch (indexPath.row)
     {
         case 0:
             cell.backgroundColor=[UIColor colorWithRed:222.0/256 green:226.0/256 blue:214.0/256 alpha:1];
             [image setImage:[UIImage imageNamed:@"debate"]];
             [cell addSubview:image];
+            [textLabelThingy setText:@"asdfjknasd"];
             break;
         case 1:
             cell.backgroundColor=[UIColor colorWithRed:202.0/256 green:207.0/256 blue:214.0/256 alpha:1];
             [image setImage:[UIImage imageNamed:@"clock_dark"]];
             [cell addSubview:image];
+            [textLabelThingy setText:@"asdfjknasd"];
             break;
         case 2:
             cell.backgroundColor=[UIColor colorWithRed:222.0/256 green:227.0/256 blue:114.0/256 alpha:1];
             [image setImage:[UIImage imageNamed:@"ic_support"]];
             [cell addSubview:image];
+            [textLabelThingy setText:@"asdfjknasd"];
             break;
     
         default:
