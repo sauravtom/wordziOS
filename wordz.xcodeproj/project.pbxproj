@@ -68,14 +68,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A41AF4D1AC6A14300B6B90F /* images */ = {
+			isa = PBXGroup;
+			children = (
+				E0E254541AC6A0B900877215 /* debate.png */,
+				E0E254551AC6A0B900877215 /* ic_support.png */,
+				E0E254521AC6A0B900877215 /* back.png */,
+				E0E254531AC6A0B900877215 /* clock_dark.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		E040EE161AC6872900C40CF6 = {
 			isa = PBXGroup;
 			children = (
 				E0E2545A1AC6A0C300877215 /* strings.xml */,
-				E0E254521AC6A0B900877215 /* back.png */,
-				E0E254531AC6A0B900877215 /* clock_dark.png */,
-				E0E254541AC6A0B900877215 /* debate.png */,
-				E0E254551AC6A0B900877215 /* ic_support.png */,
+				7A41AF4D1AC6A14300B6B90F /* images */,
 				E040EE211AC6872900C40CF6 /* wordz */,
 				E040EE3B1AC6872900C40CF6 /* wordzTests */,
 				E040EE201AC6872900C40CF6 /* Products */,
