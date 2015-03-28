@@ -400,6 +400,7 @@
 				E040EE441AC6872900C40CF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E040EE451AC6872900C40CF6 /* Build configuration list for PBXNativeTarget "wordzTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +409,7 @@
 				E040EE471AC6872900C40CF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
