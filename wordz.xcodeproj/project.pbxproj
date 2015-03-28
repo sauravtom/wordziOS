@@ -10,7 +10,6 @@
 		E040EE251AC6872900C40CF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E040EE241AC6872900C40CF6 /* main.m */; };
 		E040EE281AC6872900C40CF6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E040EE271AC6872900C40CF6 /* AppDelegate.m */; };
 		E040EE2B1AC6872900C40CF6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E040EE2A1AC6872900C40CF6 /* ViewController.m */; };
-		E040EE2E1AC6872900C40CF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E040EE2C1AC6872900C40CF6 /* Main.storyboard */; };
 		E040EE301AC6872900C40CF6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E040EE2F1AC6872900C40CF6 /* Images.xcassets */; };
 		E040EE331AC6872900C40CF6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E040EE311AC6872900C40CF6 /* LaunchScreen.xib */; };
 		E040EE3F1AC6872900C40CF6 /* wordzTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E040EE3E1AC6872900C40CF6 /* wordzTests.m */; };
@@ -34,7 +33,6 @@
 		E040EE271AC6872900C40CF6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E040EE291AC6872900C40CF6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E040EE2A1AC6872900C40CF6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E040EE2D1AC6872900C40CF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E040EE2F1AC6872900C40CF6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E040EE321AC6872900C40CF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E040EE381AC6872900C40CF6 /* wordzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wordzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,7 +83,6 @@
 				E040EE271AC6872900C40CF6 /* AppDelegate.m */,
 				E040EE291AC6872900C40CF6 /* ViewController.h */,
 				E040EE2A1AC6872900C40CF6 /* ViewController.m */,
-				E040EE2C1AC6872900C40CF6 /* Main.storyboard */,
 				E040EE2F1AC6872900C40CF6 /* Images.xcassets */,
 				E040EE311AC6872900C40CF6 /* LaunchScreen.xib */,
 				E040EE221AC6872900C40CF6 /* Supporting Files */,
@@ -199,7 +196,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E040EE2E1AC6872900C40CF6 /* Main.storyboard in Resources */,
 				E040EE331AC6872900C40CF6 /* LaunchScreen.xib in Resources */,
 				E040EE301AC6872900C40CF6 /* Images.xcassets in Resources */,
 			);
@@ -244,14 +240,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E040EE2C1AC6872900C40CF6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E040EE2D1AC6872900C40CF6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E040EE311AC6872900C40CF6 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -412,6 +400,7 @@
 				E040EE441AC6872900C40CF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E040EE451AC6872900C40CF6 /* Build configuration list for PBXNativeTarget "wordzTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +409,7 @@
 				E040EE471AC6872900C40CF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
