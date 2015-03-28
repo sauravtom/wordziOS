@@ -13,6 +13,11 @@
 		E040EE301AC6872900C40CF6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E040EE2F1AC6872900C40CF6 /* Images.xcassets */; };
 		E040EE331AC6872900C40CF6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E040EE311AC6872900C40CF6 /* LaunchScreen.xib */; };
 		E040EE3F1AC6872900C40CF6 /* wordzTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E040EE3E1AC6872900C40CF6 /* wordzTests.m */; };
+		E0E254561AC6A0B900877215 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = E0E254521AC6A0B900877215 /* back.png */; };
+		E0E254571AC6A0B900877215 /* clock_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = E0E254531AC6A0B900877215 /* clock_dark.png */; };
+		E0E254581AC6A0B900877215 /* debate.png in Resources */ = {isa = PBXBuildFile; fileRef = E0E254541AC6A0B900877215 /* debate.png */; };
+		E0E254591AC6A0B900877215 /* ic_support.png in Resources */ = {isa = PBXBuildFile; fileRef = E0E254551AC6A0B900877215 /* ic_support.png */; };
+		E0E2545B1AC6A0C300877215 /* strings.xml in Resources */ = {isa = PBXBuildFile; fileRef = E0E2545A1AC6A0C300877215 /* strings.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,11 @@
 		E040EE381AC6872900C40CF6 /* wordzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wordzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E040EE3D1AC6872900C40CF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E040EE3E1AC6872900C40CF6 /* wordzTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wordzTests.m; sourceTree = "<group>"; };
+		E0E254521AC6A0B900877215 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back.png; path = images/back.png; sourceTree = "<group>"; };
+		E0E254531AC6A0B900877215 /* clock_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = clock_dark.png; path = images/clock_dark.png; sourceTree = "<group>"; };
+		E0E254541AC6A0B900877215 /* debate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = debate.png; path = images/debate.png; sourceTree = "<group>"; };
+		E0E254551AC6A0B900877215 /* ic_support.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_support.png; path = images/ic_support.png; sourceTree = "<group>"; };
+		E0E2545A1AC6A0C300877215 /* strings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = strings.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +71,11 @@
 		E040EE161AC6872900C40CF6 = {
 			isa = PBXGroup;
 			children = (
+				E0E2545A1AC6A0C300877215 /* strings.xml */,
+				E0E254521AC6A0B900877215 /* back.png */,
+				E0E254531AC6A0B900877215 /* clock_dark.png */,
+				E0E254541AC6A0B900877215 /* debate.png */,
+				E0E254551AC6A0B900877215 /* ic_support.png */,
 				E040EE211AC6872900C40CF6 /* wordz */,
 				E040EE3B1AC6872900C40CF6 /* wordzTests */,
 				E040EE201AC6872900C40CF6 /* Products */,
@@ -197,7 +212,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E040EE331AC6872900C40CF6 /* LaunchScreen.xib in Resources */,
+				E0E2545B1AC6A0C300877215 /* strings.xml in Resources */,
+				E0E254591AC6A0B900877215 /* ic_support.png in Resources */,
 				E040EE301AC6872900C40CF6 /* Images.xcassets in Resources */,
+				E0E254571AC6A0B900877215 /* clock_dark.png in Resources */,
+				E0E254561AC6A0B900877215 /* back.png in Resources */,
+				E0E254581AC6A0B900877215 /* debate.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
