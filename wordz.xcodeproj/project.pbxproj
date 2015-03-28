@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A9411171AC6C26A00DC5F6F /* tableContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9411161AC6C26A00DC5F6F /* tableContainer.m */; };
 		E040EE251AC6872900C40CF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E040EE241AC6872900C40CF6 /* main.m */; };
 		E040EE281AC6872900C40CF6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E040EE271AC6872900C40CF6 /* AppDelegate.m */; };
 		E040EE2B1AC6872900C40CF6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E040EE2A1AC6872900C40CF6 /* ViewController.m */; };
@@ -17,7 +18,7 @@
 		E0E254571AC6A0B900877215 /* clock_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = E0E254531AC6A0B900877215 /* clock_dark.png */; };
 		E0E254581AC6A0B900877215 /* debate.png in Resources */ = {isa = PBXBuildFile; fileRef = E0E254541AC6A0B900877215 /* debate.png */; };
 		E0E254591AC6A0B900877215 /* ic_support.png in Resources */ = {isa = PBXBuildFile; fileRef = E0E254551AC6A0B900877215 /* ic_support.png */; };
-		E0E2545B1AC6A0C300877215 /* strings.xml in Resources */ = {isa = PBXBuildFile; fileRef = E0E2545A1AC6A0C300877215 /* strings.xml */; };
+		E0E2545B1AC6A0C300877215 /* strings.json in Resources */ = {isa = PBXBuildFile; fileRef = E0E2545A1AC6A0C300877215 /* strings.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A9411151AC6C26A00DC5F6F /* tableContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tableContainer.h; sourceTree = "<group>"; };
+		7A9411161AC6C26A00DC5F6F /* tableContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tableContainer.m; sourceTree = "<group>"; };
 		E040EE1F1AC6872900C40CF6 /* wordz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wordz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E040EE231AC6872900C40CF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E040EE241AC6872900C40CF6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,7 +50,7 @@
 		E0E254531AC6A0B900877215 /* clock_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = clock_dark.png; path = images/clock_dark.png; sourceTree = "<group>"; };
 		E0E254541AC6A0B900877215 /* debate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = debate.png; path = images/debate.png; sourceTree = "<group>"; };
 		E0E254551AC6A0B900877215 /* ic_support.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_support.png; path = images/ic_support.png; sourceTree = "<group>"; };
-		E0E2545A1AC6A0C300877215 /* strings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = strings.xml; sourceTree = "<group>"; };
+		E0E2545A1AC6A0C300877215 /* strings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = strings.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +85,7 @@
 		E040EE161AC6872900C40CF6 = {
 			isa = PBXGroup;
 			children = (
-				E0E2545A1AC6A0C300877215 /* strings.xml */,
+				E0E2545A1AC6A0C300877215 /* strings.json */,
 				7A41AF4D1AC6A14300B6B90F /* images */,
 				E040EE211AC6872900C40CF6 /* wordz */,
 				E040EE3B1AC6872900C40CF6 /* wordzTests */,
@@ -106,6 +109,8 @@
 				E040EE271AC6872900C40CF6 /* AppDelegate.m */,
 				E040EE291AC6872900C40CF6 /* ViewController.h */,
 				E040EE2A1AC6872900C40CF6 /* ViewController.m */,
+				7A9411151AC6C26A00DC5F6F /* tableContainer.h */,
+				7A9411161AC6C26A00DC5F6F /* tableContainer.m */,
 				E040EE2F1AC6872900C40CF6 /* Images.xcassets */,
 				E040EE311AC6872900C40CF6 /* LaunchScreen.xib */,
 				E040EE221AC6872900C40CF6 /* Supporting Files */,
@@ -220,7 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E040EE331AC6872900C40CF6 /* LaunchScreen.xib in Resources */,
-				E0E2545B1AC6A0C300877215 /* strings.xml in Resources */,
+				E0E2545B1AC6A0C300877215 /* strings.json in Resources */,
 				E0E254591AC6A0B900877215 /* ic_support.png in Resources */,
 				E040EE301AC6872900C40CF6 /* Images.xcassets in Resources */,
 				E0E254571AC6A0B900877215 /* clock_dark.png in Resources */,
@@ -243,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A9411171AC6C26A00DC5F6F /* tableContainer.m in Sources */,
 				E040EE2B1AC6872900C40CF6 /* ViewController.m in Sources */,
 				E040EE281AC6872900C40CF6 /* AppDelegate.m in Sources */,
 				E040EE251AC6872900C40CF6 /* main.m in Sources */,

@@ -25,6 +25,13 @@
     [self.initialTable setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     [self.initialTable setAllowsSelection:NO];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *xmlPath = [[NSBundle mainBundle] pathForResource:@"strings" ofType:@"json"];
+    NSData *xmlData = [NSData dataWithContentsOfFile:xmlPath];    // do whatever you want with xmlParser
+    NSError *error;
+    NSDictionary *dict=[NSJSONSerialization JSONObjectWithData:xmlData options:NSJSONReadingAllowFragments error:&error];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -58,7 +65,7 @@
     [cell addSubview:textLabelThingy];
     [textLabelThingy setTextColor:[UIColor whiteColor]];
     
-    switch (indexPath.row)
+    switch (indexPath.row) 
     {
         case 0:
             cell.backgroundColor=[UIColor colorWithRed:222.0/256 green:226.0/256 blue:214.0/256 alpha:1];
