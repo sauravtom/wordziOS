@@ -31,7 +31,7 @@
 },
 {
 "-name": "Example",
-"#text": "	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+"#text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 },
 {
 "-name": "hello_blank_fragment",
@@ -144,9 +144,7 @@
 {
 "-name": "aboutWordz",
 "b": "WORDZ",
-"#text": " is a student led youth organization which aims at enhancing public speaking as well as leadership skills among the youth of our country.\\n\\n\\n
-We at WORDZ believe that each student has the potential to be a good speaker, debater, orator and diplomat. For this reason we provide schools with workshops and trainings for different platforms of public speaking so as to facilitate programs for them to follow and learn what they need to. We send our trainers to various schools and universities helping the students learn better and faster through modules and simulations.\\n\\n\\n
-Alongwith this, WORDZ also organises various events ranging from intra/inter school/college MUNs to Parliamentary Debates, Quizzes and other events relating to public speaking ."
+"#text": "is a student led youth organization which aims at enhancing public speaking as well as leadership skills among the youth of our country.We at WORDZ believe that each student has the potential to be a good speaker, debater, orator and diplomat. For this reason we provide schools with workshops and trainings for different platforms of public speaking so as to facilitate programs for them to follow and learn what they need to. We send our trainers to various schools and universities helping the students learn better and faster through modules and simulations.Alongwith this, WORDZ also organises various events ranging from intra/inter school/college MUNs to Parliamentary Debates, Quizzes and other events relating to public speaking ."
 },
 {
 "-name": "title_activity_muncalender",
@@ -172,14 +170,7 @@ Alongwith this, WORDZ also organises various events ranging from intra/inter sch
 },
 {
 "-name": "about_body",
-"#cdata-section": "
-This app is developed by <br/><b>Yogesh Balan</b>.<br/>
-<a href=\\'https://www.facebook.com/yogesh.balan.7\\'>Facebook</a>&nbsp;&nbsp;
-<a href=\\'https://twitter.com/yogesh_balan\\'>Twitter</a>&nbsp;&nbsp;
-<a href=\\'https://plus.google.com/u/0/112844341182757087976\\'>Google+</a>&nbsp;&nbsp;
-<a href=\\'https://github.com/yogeshbalan\\'>GitHub</a>&nbsp;&nbsp;
-<a href=\\'mailto:wordz.delhi@gmail.com\\'>Email</a>&nbsp;&nbsp;
-"
+"#cdata-section": "credits"
 },
 {
 "-name": "contacts",
