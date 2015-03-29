@@ -63,7 +63,7 @@
     
     // Configure the cell...
     //cell.textLabel.text = [yourarray objectAtIndex:indexPath.row];
-    cell.textLabel.text = [[self.data objectAtIndex:indexPath.row] objectForKey:@"-name"];
+    cell.textLabel.text = [self.data objectAtIndex:indexPath.row];
     
     return cell;
     

@@ -103,9 +103,14 @@
     NSError *error;
     //NSDictionary *dict=[NSJSONSerialization JSONObjectWithData:xmlData options:NSJSONReadingAllowFragments error:&error];
     
-    NSMutableArray *dict=[NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments error:&error];
-
-    tableContainer *table=[[tableContainer alloc]initWithFrame:CGRectMake(10, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame)) andData:dict];
+    NSDictionary *dict=[NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments error:&error];
+    NSMutableArray *data2=[dict objectForKey:@"data"];
+    NSMutableArray *data=[[NSMutableArray alloc] init];
+    for (NSDictionary *dataObject in data2)
+    {
+        [data addObject:[dataObject objectForKey:@"id"]];
+    }
+    tableContainer *table=[[tableContainer alloc]initWithFrame:CGRectMake(10, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame)) andData:data];
     [self.view addSubview:table];
 
     UIPanGestureRecognizer * recognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
