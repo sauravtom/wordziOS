@@ -28,8 +28,8 @@
     
     NSString *xmlPath = [[NSBundle mainBundle] pathForResource:@"strings" ofType:@"json"];
     NSData *xmlData = [NSData dataWithContentsOfFile:xmlPath];    // do whatever you want with xmlParser
-    NSError *error;
-    NSDictionary *dict=[NSJSONSerialization JSONObjectWithData:xmlData options:NSJSONReadingAllowFragments error:&error];
+    //NSError *error;
+    //NSDictionary *dict=[NSJSONSerialization JSONObjectWithData:xmlData options:NSJSONReadingAllowFragments error:&error];
     
     
 }
@@ -71,11 +71,11 @@
             cell.backgroundColor=[UIColor colorWithRed:222.0/256 green:226.0/256 blue:214.0/256 alpha:1];
             [image setImage:[UIImage imageNamed:@"debate"]];
             [cell addSubview:image];
-            [textLabelThingy setText:@"asdfjknasd"];
+            [textLabelThingy setText:@"MUN Rules Of Procedure"];
             break;
         case 1:
             cell.backgroundColor=[UIColor colorWithRed:202.0/256 green:207.0/256 blue:214.0/256 alpha:1];
-            [image setImage:[UIImage imageNamed:@"clock_dark"]];
+            [image setImage:[UIImage imageNamed:@"MUN Schedule"]];
             [cell addSubview:image];
             [textLabelThingy setText:@"asdfjknasd"];
             break;
@@ -83,7 +83,7 @@
             cell.backgroundColor=[UIColor colorWithRed:222.0/256 green:227.0/256 blue:114.0/256 alpha:1];
             [image setImage:[UIImage imageNamed:@"ic_support"]];
             [cell addSubview:image];
-            [textLabelThingy setText:@"asdfjknasd"];
+            [textLabelThingy setText:@"About Us"];
             break;
     
         default:

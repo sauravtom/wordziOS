@@ -17,5 +17,12 @@
     // Drawing code
 }
 */
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:@"cell"];
+    UIImageView *image=[[UIImageView alloc]init];
+    return cell;
+}
+
 
 @end
