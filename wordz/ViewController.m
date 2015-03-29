@@ -25,11 +25,7 @@
     [self.initialTable setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     // Do any additional setup after loading the view, typically from a nib.
     
-    NSString *xmlPath = [[NSBundle mainBundle] pathForResource:@"strings" ofType:@"json"];
-    NSData *xmlData = [NSData dataWithContentsOfFile:xmlPath];    // do whatever you want with xmlParser
-    //NSError *error;
-    //NSDictionary *dict=[NSJSONSerialization JSONObjectWithData:xmlData options:NSJSONReadingAllowFragments error:&error];
-    
+
     
 }
 
@@ -101,9 +97,17 @@
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    tableContainer *table=[[tableContainer alloc]initWithFrame:CGRectMake(10, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame))];
-    [self.view addSubview:table];
     
+    NSString *xmlPath = [[NSBundle mainBundle] pathForResource:@"strings" ofType:@"json"];
+    NSData *xmlData = [NSData dataWithContentsOfFile:xmlPath];    // do whatever you want with xmlParser
+                                                                  //NSError *error;
+                                                                  //NSDictionary *dict=[NSJSONSerialization JSONObjectWithData:xmlData options:NSJSONReadingAllowFragments error:&error];
+    
+    NSMutableArray *dict=[NSJSONSerialization JSONObjectWithData:xmlData options:NSJSONReadingAllowFragments error:nil];
+
+    tableContainer *table=[[tableContainer alloc]initWithFrame:CGRectMake(10, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame)) andData:dict];
+    [self.view addSubview:table];
+
     UIPanGestureRecognizer * recognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
     recognizer.delegate = self;
     [table addGestureRecognizer:recognizer];

@@ -26,7 +26,18 @@
     [textTable setDataSource:self];
     [textTable setDataSource:self];
     [self addSubview:textTable];
- 
+    return self;
+}
+-(id)initWithFrame:(CGRect)frame andData:(NSMutableArray *)data
+{
+    self=[super initWithFrame:frame];
+    self.backgroundColor=[UIColor greenColor];
+    UITableView *textTable=[[UITableView alloc]initWithFrame:self.frame];
+    [textTable setDataSource:self];
+    [textTable setDataSource:self];
+    [self addSubview:textTable];
+    
+    self.data=data;
     return self;
 }
 
@@ -35,7 +46,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    return [self.data count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -52,7 +63,7 @@
     
     // Configure the cell...
     //cell.textLabel.text = [yourarray objectAtIndex:indexPath.row];
-    cell.textLabel.text = @"foo";
+    cell.textLabel.text = [[self.data objectAtIndex:indexPath.row] objectForKey:@"-name"];
     
     return cell;
     

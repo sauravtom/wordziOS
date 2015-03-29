@@ -12,5 +12,6 @@
 @property(nonatomic,strong) NSMutableArray *data;
 
 -(id)initWithFrame:(CGRect)frame;
+-(id)initWithFrame:(CGRect)frame andData:(NSMutableArray *)data;
 
 @end
