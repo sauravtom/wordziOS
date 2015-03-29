@@ -75,9 +75,9 @@
             break;
         case 1:
             cell.backgroundColor=[UIColor colorWithRed:202.0/256 green:207.0/256 blue:214.0/256 alpha:1];
-            [image setImage:[UIImage imageNamed:@"MUN Schedule"]];
+            [image setImage:[UIImage imageNamed:@"clock_dark"]];
             [cell addSubview:image];
-            [textLabelThingy setText:@"asdfjknasd"];
+            [textLabelThingy setText:@"MUN Schedule"];
             break;
         case 2:
             cell.backgroundColor=[UIColor colorWithRed:222.0/256 green:227.0/256 blue:114.0/256 alpha:1];
