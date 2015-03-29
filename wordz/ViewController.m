@@ -98,12 +98,12 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    NSString *xmlPath = [[NSBundle mainBundle] pathForResource:@"strings" ofType:@"json"];
-    NSData *xmlData = [NSData dataWithContentsOfFile:xmlPath];    // do whatever you want with xmlParser
-                                                                  //NSError *error;
-                                                                  //NSDictionary *dict=[NSJSONSerialization JSONObjectWithData:xmlData options:NSJSONReadingAllowFragments error:&error];
+    NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"json"];
+    NSData *jsonData = [NSData dataWithContentsOfFile:jsonPath];    // do whatever you want with xmlParser
+    NSError *error;
+    //NSDictionary *dict=[NSJSONSerialization JSONObjectWithData:xmlData options:NSJSONReadingAllowFragments error:&error];
     
-    NSMutableArray *dict=[NSJSONSerialization JSONObjectWithData:xmlData options:NSJSONReadingAllowFragments error:nil];
+    NSMutableArray *dict=[NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments error:&error];
 
     tableContainer *table=[[tableContainer alloc]initWithFrame:CGRectMake(10, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame)) andData:dict];
     [self.view addSubview:table];
