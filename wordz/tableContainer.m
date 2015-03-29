@@ -18,6 +18,18 @@
 }
 */
 
+-(id)initWithFrame:(CGRect)frame
+{
+    self=[super initWithFrame:frame];
+    self.backgroundColor=[UIColor greenColor];
+    UITableView *textTable=[[UITableView alloc]initWithFrame:self.frame];
+    [textTable setDataSource:self];
+    [textTable setDataSource:self];
+    [self addSubview:textTable];
+ 
+    return self;
+}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }

@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface tableContainer : UIView<UITableViewDataSource,UITableViewDelegate>
+@property(nonatomic,strong) NSMutableArray *data;
+
+-(id)initWithFrame:(CGRect)frame;
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "tableContainer.h"
 @interface ViewController ()
 
 @end
@@ -23,7 +23,6 @@
     [self.initialTable registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     [self.view setBackgroundColor:[UIColor orangeColor]];
     [self.initialTable setSeparatorStyle:UITableViewCellSeparatorStyleNone];
-    [self.initialTable setAllowsSelection:NO];
     // Do any additional setup after loading the view, typically from a nib.
     
     NSString *xmlPath = [[NSBundle mainBundle] pathForResource:@"strings" ofType:@"json"];
@@ -91,5 +90,25 @@
     }
     return cell;
 }
+- (void)handlePan:(UIPanGestureRecognizer *)recognizer
+{
+    
+    CGPoint translation = [recognizer translationInView:self.view];
+    recognizer.view.center = CGPointMake(recognizer.view.center.x + translation.x,
+                                         recognizer.view.center.y + translation.y);
+    [recognizer setTranslation:CGPointMake(0, 0) inView:self.view];
+    
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    tableContainer *table=[[tableContainer alloc]initWithFrame:CGRectMake(10, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame))];
+    [self.view addSubview:table];
+    
+    UIPanGestureRecognizer * recognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
+    recognizer.delegate = self;
+    [table addGestureRecognizer:recognizer];
+    
+}
+
 @end
 

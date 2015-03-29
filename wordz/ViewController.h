@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,UIGestureRecognizerDelegate>
 @property (nonatomic,strong)UITableView *initialTable;
+- (void)handlePan:(UIPanGestureRecognizer *)recognizer;
 
 @end
 
