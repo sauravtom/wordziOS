@@ -59,7 +59,8 @@
         case 0:
             cell.backgroundColor=[UIColor colorWithRed:222.0/256 green:226.0/256 blue:214.0/256 alpha:1];
             break;
-            
+        case 1:
+            cell.backgroundColor
         default:
             break;
     }
