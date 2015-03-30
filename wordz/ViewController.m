@@ -98,7 +98,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"data" ofType:@"data"];
+    NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"data" ofType:@"json"];
     NSData *jsonData = [NSData dataWithContentsOfFile:jsonPath];    // do whatever you want with xmlParser
     NSError *error;
     //NSDictionary *dict=[NSJSONSerialization JSONObjectWithData:xmlData options:NSJSONReadingAllowFragments error:&error];
